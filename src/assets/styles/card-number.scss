@@ -1,0 +1,29 @@
+.card-number {
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px #0000000d;
+  padding: 2rem 1.5rem;
+  &:hover {
+    transform: scale(1.03);
+    transition: all 0.2s;
+    box-shadow: 0px 5px 15px #0000000d;
+  }
+  .number {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+  .title {
+    color: #555555;
+  }
+  .icon {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

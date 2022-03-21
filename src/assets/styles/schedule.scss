@@ -1,0 +1,204 @@
+.schedule-group-device {
+  .title {
+    font-weight: 500;
+    color: #000000;
+    font-size: 20px;
+  }
+  .small-title {
+    color: #333333;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .schedule-header {
+    .view-map {
+      color: #0072f5;
+      cursor: pointer;
+      position: relative;
+      margin-left: 10px;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 1px;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        background-color: #0072f5;
+      }
+    }
+  }
+  .schedule-content {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+    .playlist {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 5px 5px #00000008;
+      border-radius: 3px;
+      @media (min-width: 992px) {
+        flex-basis: 55%;
+        margin-right: 10px;
+      }
+      .select-playlist {
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn-add-playlist {
+        min-width: 91px;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-transform: uppercase;
+        background-color: #f80000;
+        color: white;
+      }
+    }
+    .table_schedule {
+      .table-row-height {
+        .ant-table-cell {
+          border-bottom: 1px solid #e3e3e3;
+        }
+      }
+      .ant-table-thead {
+        th {
+          background-color: #ffffff;
+          border: 0;
+          font-size: 14px;
+          font-weight: 500;
+          color: #000000;
+        }
+      }
+      .ant-table-content {
+        border: 0;
+      }
+      .ant-table-row {
+        &.active {
+          background-color: #eff6ff;
+          .name {
+            color: #333333;
+            font-weight: 500;
+          }
+        }
+      }
+      .btn-schedule {
+        color: #0072f5;
+        font-size: 14px;
+        border: 1px solid #0072f5;
+      }
+      .time {
+        color: #000000;
+      }
+    }
+    .schedule-type {
+      position: relative;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 5px 5px #00000008;
+      border-radius: 3px;
+      margin-top: 20px;
+      @media (min-width: 992px) {
+        flex-basis: 45%;
+        margin-left: 10px;
+        margin-top: 0;
+      }
+      .company-name {
+        color: #0072f5;
+      }
+      .list-type {
+        .ant-radio-wrapper {
+          font-size: 18px;
+        }
+      }
+    }
+    .schedule-type-content {
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .checkbox-group {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+        .checkbox-item {
+          width: 100%;
+          border-bottom: 1px solid #e6e6e6;
+          padding: 12px 0;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .time {
+            color: #0072f5;
+            margin-right: 30px;
+          }
+          .btn-set-time {
+            border: 1px solid #0072f5;
+            color: #0072f5;
+            padding: 0;
+            height: 28px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+  .action {
+    .btn-cancel {
+      font-weight: 500;
+      color: #000000;
+      font-size: 16px;
+      background-color: #c9c9c9;
+      height: 45px;
+      @media (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+    .btn-add-schedule {
+      background-color: #0072f5;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 500;
+      height: 45px;
+      @media (min-width: 768px) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.month-modal {
+  .ant-modal-header {
+    user-select: none;
+  }
+  .days {
+    user-select: none;
+    cursor: crosshair;
+    .day {
+      width: 70px;
+      height: 70px;
+      border: 2px solid #c9c9c9;
+      border-radius: 5px;
+      margin: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666666;
+      font-size: 18px;
+      font-weight: 500;
+      &.selected {
+        border: 1px solid #f80000;
+      }
+    }
+  }
+  .ant-modal-footer {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}

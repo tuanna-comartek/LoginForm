@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "isolatedModules": false,
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@commons/*": ["src/commons/*"],
+      "@configs/*": ["src/configs/*"],
+      "@helpers/*": ["src/helpers/*"],
+      "@redux/*": ["src/redux/*"],
+      "@modules/*": ["src/modules/*"],
+      "@constants/*": ["src/constants/*"],
+      "@services/*": ["src/services/*"],
+      "@utils/*": ["src/utils/*"],
+      "@hoc/*": ["src/hoc/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@/*": ["src/*"]
+    }
+  }
+}

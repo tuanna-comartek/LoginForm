@@ -1,0 +1,134 @@
+{
+    "name": "react-redux-graphql",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.32",
+        "@fortawesome/free-solid-svg-icons": "^5.15.1",
+        "@fortawesome/react-fontawesome": "^0.1.11",
+        "@material-ui/core": "^4.12.3",
+        "@types/date-and-time": "^0.13.0",
+        "@types/react-text-truncate": "^0.14.1",
+        "@types/uuid": "^8.3.0",
+        "babel-loader": "8.1.0",
+        "craco-less": "^1.18.0",
+        "customize-cra": "^1.0.0",
+        "eslint-config-react-app": "^6.0.0",
+        "formik": "^2.2.9",
+        "fs": "^0.0.1-security",
+        "graphql-compiler": "^1.7.0",
+        "graphql-request": "^3.4.0",
+        "history": "^5.0.0",
+        "husky": "^4.2.5",
+        "i18next": "^20.3.2",
+        "i18next-browser-languagedetector": "^6.1.2",
+        "i18next-xhr-backend": "^3.2.2",
+        "immutability-helper": "^3.1.1",
+        "less-loader": "7.3.0",
+        "lint-staged": "^10.2.11",
+        "module-alias": "^2.2.2",
+        "node-sass": "^4.14.1",
+        "prettier": "2.0.5",
+        "react": "^16.13.1",
+        "react-app-rewired": "^2.1.6",
+        "react-dom": "^16.13.1",
+        "react-i18next": "^11.11.1",
+        "react-icons": "^4.3.1",
+        "react-infinite-scroll-component": "^6.1.0",
+        "react-intl": "^5.6.3",
+        "react-perfect-scrollbar": "^1.5.8",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "3.4.2",
+        "react-toast-notifications": "^2.5.1",
+        "redux": "^4.0.5",
+        "redux-logger": "^3.0.6",
+        "styled-components": "^5.1.1",
+        "subscriptions-transport-ws": "^0.9.18",
+        "tslint": "^6.1.3",
+        "typescript": "^3.9.7",
+        "use-deep-compare-effect": "^1.4.0",
+        "use-image": "^1.0.6",
+        "uuid": "^8.3.0",
+        "vite": "^2.7.3",
+        "yarn": "^1.22.10",
+        "yup": "^0.32.11"
+    },
+    "scripts": {
+        "start": "yarn gen:types && react-app-rewired start",
+        "build": "yarn gen:types && react-app-rewired build",
+        "test": "react-app-rewired test",
+        "eject": "react-scripts eject",
+        "gen:types": "graphql-codegen --config codegen.yml -r dotenv/config",
+        "deploy:develop": "shipit develop deploy --shipitfile ./shipitfile.js",
+        "deploy:production": "shipit production deploy --shipitfile ./shipitfile_production.js"
+    },
+    "devDependencies": {
+        "@graphql-codegen/cli": "^1.21.7",
+        "@graphql-codegen/introspection": "1.18.2",
+        "@graphql-codegen/typescript": "1.23.0",
+        "@graphql-codegen/typescript-graphql-request": "^3.2.5",
+        "@graphql-codegen/typescript-operations": "1.18.4",
+        "@testing-library/jest-dom": "^4.2.4",
+        "@testing-library/react": "^9.3.2",
+        "@testing-library/user-event": "^7.1.2",
+        "@types/history": "^4.7.7",
+        "@types/jest": "^24.0.0",
+        "@types/lodash": "^4.14.159",
+        "@types/module-alias": "^2.0.0",
+        "@types/moment": "^2.13.0",
+        "@types/node": "^12.0.0",
+        "@types/pdf-parse": "^1.1.0",
+        "@types/pdfjs-dist": "^2.1.6",
+        "@types/react": "^16.9.46",
+        "@types/react-addons-perf": "^0.14.18",
+        "@types/react-beautiful-dnd": "^13.0.0",
+        "@types/react-dom": "^16.9.0",
+        "@types/react-infinite-scroller": "1.2.2",
+        "@types/react-mentions": "^3.3.1",
+        "@types/react-redux": "^7.1.9",
+        "@types/react-router-config": "^5.0.1",
+        "@types/react-router-dom": "^5.1.5",
+        "@types/styled-components": "^5.1.2",
+        "@typescript-eslint/eslint-plugin": "^3.9.0",
+        "@typescript-eslint/parser": "^3.9.0",
+        "graphql": "^15.5.1",
+        "react-addons-perf": "^15.4.2",
+        "react-app-rewire-alias": "^0.1.6",
+        "tslint-config-airbnb": "^5.11.2",
+        "tslint-config-prettier": "^1.18.0",
+        "tslint-react": "^5.0.0"
+    },
+    "eslintConfig": {
+        "extends": "react-app",
+        "rules": {
+            "@typescript-eslint/no-redeclare": "off",
+            "no-redeclare": "off"
+          }
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+            "prettier --write"
+        ]
+    },
+    "resolutions": {
+        "@typescript-eslint/eslint-plugin": "2.23.0",
+        "@typescript-eslint/parser": "2.23.0"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

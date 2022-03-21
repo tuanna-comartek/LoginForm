@@ -1,0 +1,38 @@
+$primary-color: #f80000;
+.primary_color {
+  color: $primary-color;
+}
+
+$header-height: 80px;
+$content-height: 100%;
+$them-color: #ffffff;
+$color-text-menu-item: #666666;
+$menu-item-bg-active: #fff8f8;
+$menu-border-color: #00000010;
+.color-333 {
+  color: #333;
+}
+
+.mb-2rem {
+  margin-bottom: 2rem;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.text-red {
+  color: #f80000;
+}

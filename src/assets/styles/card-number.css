@@ -1,0 +1,44 @@
+.card-number {
+  border: 1px solid #f1f1f1;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 15px #0000000d;
+  box-shadow: 0px 5px 15px #0000000d;
+  padding: 2rem 1.5rem;
+}
+
+.card-number:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-box-shadow: 0px 5px 15px #0000000d;
+  box-shadow: 0px 5px 15px #0000000d;
+}
+
+.card-number .number {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.card-number .title {
+  color: #555555;
+}
+
+.card-number .icon {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/*# sourceMappingURL=card-number.css.map */

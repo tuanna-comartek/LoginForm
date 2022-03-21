@@ -1,0 +1,24 @@
+.card-gray > div {
+  .ant-card {
+    .ant-card-body {
+      background-color: #eee;
+    }
+  }
+
+  .setting-box {
+    background-color: #eee;
+  }
+
+  &:hover {
+    box-shadow: 0 0 8px #e2e2e2;
+
+    .ant-card-body,
+    .setting-box {
+      background-color: #e2e2e2;
+    }
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

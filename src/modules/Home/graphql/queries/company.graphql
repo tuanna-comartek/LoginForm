@@ -1,0 +1,5 @@
+query getCompany($input: QueryCompanyInput!) {
+  company(input: $input) {
+    _id
+  }
+}

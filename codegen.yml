@@ -1,0 +1,13 @@
+overwrite: true
+schema: 'https://api.dev.wincloud.comartek.com/graphql'
+# schema: https://api.exchange.trucdev.com/graphql
+documents: 'src/**/*.graphql'
+generates:
+  src/graphql/generated/graphql.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-operations'
+      - 'typescript-graphql-request'
+  ./graphql.schema.json:
+    plugins:
+      - 'introspection'

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useFormik } from 'formik';
 import { Grid, TextField, Button, makeStyles, createStyles, Theme } from '@material-ui/core';
 import useLogin from './hooks/useLogin';
@@ -43,12 +43,19 @@ export default function LoginPage() {
   const { data, onLogin } = useLogin();
   function hadleSubmit(values: any) {
     onLogin({ username: values.email, password: values.password });
-    if (data && data.login.token) {
-      history.replace('/home');
-    } else {
-      alert('Email or Password was wrong !!!');
-    }
+    // console.log('errrrrrrrr', error);
   }
+  useEffect(() => {
+    if (data !== undefined) {
+      if (data.login.token) {
+        history.replace('/home');
+      } else {
+        alert('Email or Password was wrong !!!');
+      }
+    }
+    //
+  }, [data]);
+
   return (
     <>
       <div style={{ paddingTop: 80 }}>

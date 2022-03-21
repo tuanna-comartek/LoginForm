@@ -12,12 +12,12 @@ export default function AppRouter() {
           <Route
             path="/home"
             render={() => {
-              return true ? <Navigation /> : <Redirect to="/LoginForm" />;
+              return true ? <Navigation /> : <Redirect to="/" />;
             }}
           >
             <Navigation />
           </Route>
-          <Route path="/LoginForm" exact={true}>
+          <Route path="/" exact={true}>
             <LoginPage />
           </Route>
         </Switch>

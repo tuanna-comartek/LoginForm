@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
-import { IoMdDoneAll } from 'react-icons/io';
-import { FaEdit } from 'react-icons/fa';
-import { AiOutlineDelete } from 'react-icons/ai';
+import { Button, Card, CardActions, CardContent, CardMedia, Typography } from '@material-ui/core';
 
 const Todo = (props: any) => {
   const { todos, completeTodo, removeTodo, updateTodo } = props;
@@ -23,8 +21,8 @@ const Todo = (props: any) => {
   }
 
   return todos.map((todo: any, index: number) => (
-    <div key={index} className="todo-row">
-      <h5 className={todo.status ? 'complete' : ''} key={todo.id}>
+    <div key={index} className="todo-row" style={{ paddingBottom: 30, padding: 10 }}>
+      {/* <h5 className={todo.status ? 'complete' : ''} key={todo.id}>
         {todo.text}
       </h5>
       <div className="icons">
@@ -52,7 +50,30 @@ const Todo = (props: any) => {
           <span>Delete</span>
           <AiOutlineDelete className="icon" />
         </div>
-      </div>
+      </div> */}
+      <Card style={{ maxWidth: 345 }} key={todo.id}>
+        <CardMedia component="img" height="140" image={todo.image} alt="green iguana" />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div" className={todo.status ? 'complete' : ''}>
+            {todo.text}
+          </Typography>
+          <Typography variant="body2" style={{ color: 'gray' }}>
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents
+            except Antarctica
+          </Typography>
+        </CardContent>
+        <CardActions>
+          <Button size="small" onClick={() => completeTodo(todo.id)}>
+            Active
+          </Button>
+          <Button size="small" onClick={() => setEdit({ id: todo.id, value: todo.text })}>
+            Edit
+          </Button>
+          <Button size="small" onClick={() => removeTodo(todo.id)}>
+            Delete
+          </Button>
+        </CardActions>
+      </Card>
     </div>
   ));
 };

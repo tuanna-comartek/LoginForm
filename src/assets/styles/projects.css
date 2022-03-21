@@ -8,7 +8,7 @@
 
 .card-gray > div:hover {
   -webkit-box-shadow: 0 0 8px #e2e2e2;
-  box-shadow: 0 0 8px #e2e2e2;
+          box-shadow: 0 0 8px #e2e2e2;
 }
 
 .card-gray > div:hover .ant-card-body,

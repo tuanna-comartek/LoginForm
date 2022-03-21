@@ -32,37 +32,37 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 992px) {
   .schedule-group-device .schedule-content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
 .schedule-group-device .schedule-content .playlist {
   background: #ffffff 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 5px 5px #00000008;
-  box-shadow: 0px 5px 5px #00000008;
+          box-shadow: 0px 5px 5px #00000008;
   border-radius: 3px;
 }
 
 @media (min-width: 992px) {
   .schedule-group-device .schedule-content .playlist {
     -ms-flex-preferred-size: 55%;
-    flex-basis: 55%;
+        flex-basis: 55%;
     margin-right: 10px;
   }
 }
@@ -72,8 +72,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .schedule-group-device .schedule-content .playlist .btn-add-playlist {
@@ -83,10 +83,10 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   background-color: #f80000;
   color: white;
@@ -131,7 +131,7 @@
   position: relative;
   background: #ffffff 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 5px 5px #00000008;
-  box-shadow: 0px 5px 5px #00000008;
+          box-shadow: 0px 5px 5px #00000008;
   border-radius: 3px;
   margin-top: 20px;
 }
@@ -139,7 +139,7 @@
 @media (min-width: 992px) {
   .schedule-group-device .schedule-content .schedule-type {
     -ms-flex-preferred-size: 45%;
-    flex-basis: 45%;
+        flex-basis: 45%;
     margin-left: 10px;
     margin-top: 0;
   }
@@ -158,11 +158,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .schedule-group-device .schedule-content .schedule-type-content .checkbox-group {
@@ -170,15 +170,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .schedule-group-device .schedule-content .schedule-type-content .checkbox-group .checkbox-item {
@@ -189,11 +189,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .schedule-group-device .schedule-content .schedule-type-content .checkbox-group .checkbox-item .time {
@@ -211,11 +211,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .schedule-group-device .action .btn-cancel {
@@ -248,16 +248,16 @@
 
 .month-modal .ant-modal-header {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .month-modal .days {
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   cursor: crosshair;
 }
 
@@ -271,11 +271,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #666666;
   font-size: 18px;
   font-weight: 500;

@@ -16,37 +16,37 @@ function TodoList() {
       id: 3,
       text: 'Thịt cho nấu rượu mận ',
       status: false,
-      image: { Image },
+      image: Image,
     },
     {
-      id: 4,
+      id: 2,
       text: 'Dồi cho nướng than hoa',
       status: false,
-      image: { Image },
+      image: Image,
     },
     {
       id: 6,
       text: 'Ba chỉ chó nướng lá na',
       status: true,
-      image: { Image },
+      image: Image,
     },
     {
       id: 4,
       text: 'Thịt cho nấu rượu mận 1',
       status: false,
-      image: { Image },
+      image: Image,
     },
     {
       id: 5,
       text: 'Dồi cho nướng than hoa 2',
       status: false,
-      image: { Image },
+      image: Image,
     },
     {
-      id: 6,
+      id: 1,
       text: 'Ba chỉ chó nướng lá na 3',
       status: true,
-      image: { Image },
+      image: Image,
     },
   ]);
 
@@ -107,15 +107,24 @@ function TodoList() {
 
   return (
     <>
-      <div style={{ backgroundColor: '#1f1b3a' }}>
-        <div style={{ paddingTop: 50, paddingBottom: 50 }}>
+      <div style={{ backgroundColor: '#1f1b3a', height: '100%' }}>
+        <div style={{ paddingTop: 50, paddingBottom: 50, backgroundColor: '#1f1b3a' }}>
           <div className="container section-todos">
-            <h1 style={{ color: '#fff', paddingBottom: 40, fontSize: '65px' }}>To-do List</h1>
-            <div className="section-form">
+            <h1 style={{ color: '#fff', paddingBottom: 40, fontSize: '65px', textAlign: 'center' }}>To-do List</h1>
+            <div className="section-form" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <TodoForm onSubmit={addTodo} />
             </div>
-            <div className="row section-contents" style={{ width: '100%' }}>
-              <div className="col-12 col-md-6 col-lg-4 item-todo">
+            <div
+              className="row section-contents"
+              style={{
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                margin: 0,
+              }}
+            >
+              <div className="col-12 col-md-6 col-lg-4 item-todo" style={{ display: 'contents' }}>
                 <Todo todos={todos} completeTodo={completeTodo} removeTodo={removeTodo} updateTodo={updateTodo} />
               </div>
             </div>

@@ -74,13 +74,13 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .modal_device_info_custom .custom_footer_modal .group-btn {
     margin-top: 0px !important;
@@ -93,8 +93,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 16px;
 }
 
@@ -107,13 +107,13 @@
   .modal_device_info_custom .custom_footer_modal .group-btn {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     text-align: left;
   }
   .modal_device_info_custom .custom_footer_modal .group-btn .btn_refresh_app {
@@ -134,7 +134,7 @@
 .modal_group_device_custom {
   background: #ffffff 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 10px 20px #0000000f;
-  box-shadow: 0px 10px 20px #0000000f;
+          box-shadow: 0px 10px 20px #0000000f;
   border-radius: 3px;
   padding-bottom: 0px;
 }
@@ -147,10 +147,10 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-transform: uppercase;
   background-color: #f80000;
   color: white;
@@ -161,8 +161,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .modal_group_device_custom .table_device .ant-table-thead > tr > th {
@@ -222,8 +222,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .modal_map_view .ant-modal-body .container_view .btn-close {
@@ -252,8 +252,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
 }
 
@@ -268,15 +268,15 @@
 @media (min-width: 769px) {
   .modal_setting_deivce .container_input .label_input {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 150px;
-    flex: 0 0 150px;
+        -ms-flex: 0 0 150px;
+            flex: 0 0 150px;
   }
 }
 
 .modal_setting_deivce .container_input .select_input {
   -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   width: 100%;
 }
 
@@ -284,11 +284,11 @@
   .modal_setting_deivce .container_input {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 /*# sourceMappingURL=modal.css.map */

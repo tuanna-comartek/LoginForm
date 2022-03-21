@@ -31,8 +31,8 @@ export default function LoginPage() {
   const history = useHistory();
   const formik = useFormik({
     initialValues: {
-      email: '',
-      password: '',
+      email: 'giangpt',
+      password: '1234567',
     },
     onSubmit: (values) => {
       hadleSubmit(values);
@@ -41,7 +41,6 @@ export default function LoginPage() {
 
   const classes = useStyles();
   const { data, onLogin } = useLogin();
-  // console.log('xxxx', data);
   function hadleSubmit(values: any) {
     onLogin({ username: values.email, password: values.password });
     if (data && data.login.token) {
@@ -52,41 +51,51 @@ export default function LoginPage() {
   }
   return (
     <>
-      <div className={classes.root}>
-        <form onSubmit={formik.handleSubmit}>
-          <Grid container justify="space-around" direction="row">
-            <Grid item lg={10} md={10} sm={10} xs={10} className={classes.textField}>
-              <h1>Login Form</h1>
+      <div style={{ paddingTop: 80 }}>
+        <div className={classes.root}>
+          <form onSubmit={formik.handleSubmit}>
+            <Grid container justify="space-around" direction="row">
+              <Grid
+                item
+                lg={10}
+                md={10}
+                sm={10}
+                xs={10}
+                className={classes.textField}
+                style={{ textAlign: 'center', paddingTop: 40, paddingBottom: 20 }}
+              >
+                <h1>Login Form</h1>
+              </Grid>
+              <Grid item lg={10} md={10} sm={10} xs={10} className={classes.textField} style={{ paddingBottom: 20 }}>
+                <TextField
+                  name="email"
+                  id="email"
+                  label="Email "
+                  value={formik.values.email}
+                  type="text"
+                  helperText={'Enter your full name.'}
+                  onChange={formik.handleChange}
+                />
+              </Grid>
+              <Grid item lg={10} md={10} sm={10} xs={10} className={classes.textField} style={{ paddingBottom: 20 }}>
+                <TextField
+                  name="password"
+                  id="password"
+                  label="Password"
+                  value={formik.values.password}
+                  type="password"
+                  helperText={'Please valid password.'}
+                  onChange={formik.handleChange}
+                />
+              </Grid>
+              <Grid item lg={10} md={10} sm={10} xs={10} className={classes.textField} style={{ paddingTop: 40 }}>
+                <Button type="submit" variant="contained" color="secondary">
+                  Submits
+                </Button>
+              </Grid>
             </Grid>
-            <Grid item lg={10} md={10} sm={10} xs={10} className={classes.textField}>
-              <TextField
-                name="email"
-                id="email"
-                label="Email "
-                value={formik.values.email}
-                type="text"
-                helperText={'Enter your full name.'}
-                onChange={formik.handleChange}
-              />
-            </Grid>
-            <Grid item lg={10} md={10} sm={10} xs={10} className={classes.textField}>
-              <TextField
-                name="password"
-                id="password"
-                label="Password"
-                value={formik.values.password}
-                type="password"
-                helperText={'Please valid password.'}
-                onChange={formik.handleChange}
-              />
-            </Grid>
-            <Grid item lg={10} md={10} sm={10} xs={10} className={classes.textField}>
-              <Button type="submit" variant="contained" color="secondary">
-                Submits
-              </Button>
-            </Grid>
-          </Grid>
-        </form>
+          </form>
+        </div>
       </div>
     </>
   );
